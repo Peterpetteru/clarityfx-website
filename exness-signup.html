@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="Content-Security-Policy" content="
-  default-src 'self';
-  script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://connect.facebook.net https://www.facebook.com https://graph.facebook.com;
-  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-  font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com data:;
-  img-src 'self' https://images.unsplash.com https://placehold.co https://www.facebook.com https://connect.facebook.net https://graph.facebook.com;
-  connect-src 'self' https://hooks.zapier.com https://www.facebook.com https://connect.facebook.net https://graph.facebook.com;
-  frame-src https://www.youtube.com https://m.youtube.com https://youtube.com;
-  object-src 'none';
-  base-uri 'self';
-  form-action 'self' https://www.facebook.com;">
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net https://connect.facebook.net;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+      font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com data:;
+      img-src 'self' https://images.unsplash.com https://placehold.co https://www.facebook.com;
+      connect-src 'self' https://hooks.zapier.com https://www.facebook.com;
+      frame-src https://www.youtube.com https://m.youtube.com https://youtube.com;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';">
+    <title>ClarityFx & Exness Partnership</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,32 +50,23 @@
         }
     </style>
 
-<head>
-  <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<script src="https://cdn.tailwindcss.com"></script>
-
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <!-- your meta tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Meta Pixel Script -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '666795349817181');
-    fbq('track', 'PageView');
-  </script>
+    <!-- Meta Pixel Script -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '666795349817181');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=666795349817181&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
 </head>
 <body class="gradient-bg">
@@ -150,7 +142,6 @@
 
                 <div class="text-center pt-8">
                      <p class="text-gray-400 mb-6">Click the button below to create your free Exness demo account. It only takes a few minutes!</p>
-                     <!-- CORRECTED BUTTON CODE (extra </a> removed) -->
                      <a href="javascript:void(0);" onclick="handleExnessSignup('https://one.exnessonelink.com/a/c_pxndq7fbef')" class="btn-glow inline-block text-white font-bold text-lg px-8 py-4 rounded-lg shadow-lg font-heading">
                          Create My Free Exness Account
                      </a>
@@ -210,18 +201,19 @@
         navLinks.forEach(link => {
             link.addEventListener('click', closeMenu);
         });
+    </script>
 
-        <!-- ADD THIS SCRIPT RIGHT BEFORE THE </body> TAG -->
-<script>
-function handleExnessSignup(url) {
-  // This line tracks the conversion for your Facebook ad
-  fbq('track', 'CompleteRegistration');
+    <!-- CORRECTED SCRIPT FOR THE BUTTON -->
+    <script>
+        function handleExnessSignup(url) {
+          // This line tracks the conversion for your Facebook ad
+          fbq('track', 'CompleteRegistration');
 
-  // This part waits a moment to ensure the tracking is sent, then opens the link
-  setTimeout(function() {
-    window.open(url, '_blank');
-  }, 400);
-}
-</script>
+          // This part waits a moment to ensure the tracking is sent, then opens the link
+          setTimeout(function() {
+            window.open(url, '_blank');
+          }, 400);
+        }
+    </script>
 </body>
 </html>
